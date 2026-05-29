@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input type="text" id="email">
+
+    <button onclick="checkEmail()">
+        Submit
+    </button>
+
+    <script>
+
+        function checkEmail()
+        {
+            let email =
+            document.getElementById("email").value;
+
+            if(email.includes("@"))
+            {
+                alert("Valid Email");
+            }
+
+            else
+            {
+                alert("Invalid Email");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+
+        function getData()
+        {
+            return new Promise((resolve) =>
+            {
+                setTimeout(() =>
+                {
+                    resolve("Data Loaded");
+                }, 2000);
+            });
+        }
+
+        async function showData()
+        {
+            let result = await getData();
+
+            console.log(result);
+        }
+
+        showData();
+
+    </script>
+
+</body>
+
+</html>

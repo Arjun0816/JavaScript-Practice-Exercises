@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>User Names</h1>
+
+    <ul id="users"></ul>
+
+    <script>
+
+        fetch("https://jsonplaceholder.typicode.com/users")
+
+        .then((response) =>
+        {
+            return response.json();
+        })
+
+        .then((data) =>
+        {
+            let output = "";
+
+            data.forEach((user) =>
+            {
+                output += `<li>${user.name}</li>`;
+            });
+
+            document.getElementById("users").innerHTML =
+            output;
+        });
+
+    </script>
+
+</body>
+
+</html>s

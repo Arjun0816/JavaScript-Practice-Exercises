@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let products = 
+            [
+                {name:"phone" , price : 10000},
+                {name:"laptop" , price : 60000},
+                {name:"mouse" , price : 1000}
+
+            ];
+            let costly =
+            products.filter((product) =>
+        {
+            return product.price > 1000;
+        });
+        console.log(costly);
+        </script>
+    </body>
+</html>

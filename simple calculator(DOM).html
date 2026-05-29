@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input type="number" id="num1">
+
+    <input type="number" id="num2">
+
+    <button onclick="addNumbers()">
+        Add
+    </button>
+
+    <h1 id="answer"></h1>
+
+    <script>
+
+        function addNumbers()
+        {
+            let a =
+            Number(document.getElementById("num1").value);
+
+            let b =
+            Number(document.getElementById("num2").value);
+
+            let result = a + b;
+
+            document.getElementById("answer").innerHTML =
+            result;
+        }
+
+    </script>
+
+</body>
+
+</html>

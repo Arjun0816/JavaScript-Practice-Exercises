@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="text">
+            HELLO
+        </h1>
+        <button id = "title">
+            Click ME
+        </button>
+    <script>
+        let button = 
+        document.getElementById("title");
+
+        button.addEventListener("click", changetext);
+
+        function changetext()
+        {
+            document.getElementById("text").innerHTML = 
+            "Welcome Arjun";
+        }
+    </script>
+    </body>
+</html>
+

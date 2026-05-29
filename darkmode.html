@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button id="darkBtn">
+        Dark Mode
+    </button>
+
+    <script>
+
+        let button =
+        document.getElementById("darkBtn");
+
+        button.addEventListener("click", darkMode);
+
+        function darkMode()
+        {
+            document.body.style.backgroundColor =
+            "black";
+
+            document.body.style.color =
+            "white";
+        }
+
+    </script>
+
+</body>
+
+</html>
